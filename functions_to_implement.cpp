@@ -42,7 +42,7 @@ std::vector<bool> EvenMask(std::vector<int> vec){
 std::vector<bool> OddMask(std::vector<int> vec){
      std::vector<bool> ret
     for(int i  = 0; i < vec.size(); i++){
-        if(vec[i] % 2){
+        if(vec[i] % 2){g i
             ret.push_back(true)
         }else{
             ret.push_back(false)
