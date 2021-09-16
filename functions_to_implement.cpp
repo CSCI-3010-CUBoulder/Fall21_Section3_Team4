@@ -97,7 +97,9 @@ double Sign(double num);
 
 
 // adds n to each element of the vector
-std::vector<int> AddN(std::vector<int>, int n);
+std::vector<int> AddN(std::vector<int> vec, int n){
+  vec.push_back(n)
+}
 
 // adds n to each element of the vector
 std::vector<double> AddN(std::vector<double>, double n);
