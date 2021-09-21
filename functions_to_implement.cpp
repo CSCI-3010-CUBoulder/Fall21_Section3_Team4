@@ -6,8 +6,12 @@ std::vector<std::string> Split(std::string whole, std::string separator);
 // takes two strings and returns a new string that is the result of removing all occurrences of s2 from s1.
 std::string RemoveAllSubstrings(std::string s1, std::string s2);
 
+    
+
 // takes two strings and returns a new string that is the result of removing the first occurrence of s2 from s1.
 std::string RemoveFirstSubstring(std::string s1, std::string s2);
+    
+
 
 // Joins all strings in a vector together, using the glue string in between them
 std::string Join(std::vector<std::string> pieces, std::string glue);
@@ -24,10 +28,32 @@ int RemoveTwos(int original);
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 
 // returns a vector with true for even numbers and false for odd numbers
-std::vector<bool> EvenMask(std::vector<int>);
+
+std::vector<bool> EvenMask(std::vector<int> vec){
+    std::vector<bool> ret
+    for(int i  = 0; i < vec.size(); i++){
+        if(vec[i] % 2){
+            ret.push_back(false)
+        }else{
+            ret.push_back(true)
+        }
+    }
+    return ret;
+}
 
 // returns a vector with true for odd numbers and false for even numbers
-std::vector<bool> OddMask(std::vector<int>);
+std::vector<bool> OddMask(std::vector<int> vec){
+     std::vector<bool> ret
+    for(int i  = 0; i < vec.size(); i++){
+        if(vec[i] % 2){g i
+            ret.push_back(true)
+        }else{
+            ret.push_back(false)
+        }
+    }
+    return ret;
+}
+
 
 // Sums all numbers in a vector and returns the resulting value
 int Sum(std::vector<int> nums);
@@ -52,6 +78,7 @@ std::vector<int> SquaresUntil(int n);
 int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
+
 int Factorial(int n){
     int sum = 1;
     for(int i = 0; i < n; i++){
@@ -69,6 +96,7 @@ int Sign(int num){
         return -1;
     }
 }
+
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
@@ -110,9 +138,11 @@ double Sign(double num);
 
 
 // adds n to each element of the vector
+
 std::vector<int> AddN(std::vector<int> vec, int n){
   vec.push_back(n)
 }
+
 
 // adds n to each element of the vector
 std::vector<double> AddN(std::vector<double>, double n);
